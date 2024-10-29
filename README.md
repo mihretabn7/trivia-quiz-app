@@ -10,3 +10,4 @@ Currently, two official plugins are available:
 # trivia-quiz-app
 # trivia-quiz-app
 # trivia-quiz-app
+# trivia-quiz-app
