@@ -1,0 +1,71 @@
+.leaderboard-container {
+    width: 100%; /* Set width to 100% of the viewport width */
+    height: 100%; /* Optional: Set height to full viewport height */
+    margin: 0; /* Remove margin */
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 0; /* Remove border radius for full width */
+    box-shadow: none; /* Remove shadow for full screen look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+  
+  .category-section {
+    width: 100%; /* Ensure category sections take full width */
+    margin-bottom: 20px;
+  }
+  
+  .category-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #343a40;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    width: 100%; /* Make the title full width */
+  }
+  
+  .leaderboard-table {
+    width: 100%; /* Set the table width to full */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .leaderboard-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .leaderboard-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .leaderboard-table tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  .leaderboard-table td {
+    color: #495057;
+  }
+  
+  @media (max-width: 600px) {
+    .leaderboard-table th,
+    .leaderboard-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .category-title {
+      font-size: 20px;
+    }
+  }
+  

@@ -1,0 +1,143 @@
+/* UserManagementPage.css */
+
+body {
+  font-family: 'Arial', sans-serif; /* Set a clean, modern font */
+  color: #333; /* Default text color */
+}
+
+.users-page {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for the entire page */
+}
+
+.navbar-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000; /* Black color for the title */
+}
+
+.user-form {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for the form */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.user-form input,
+.user-form select {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(25% - 10px); /* Adjust width for better layout */
+  color: #000; /* Black text color for input fields */
+}
+
+.form-buttons {
+  margin-top: 10px;
+}
+
+.add-user-button,
+.cancel-button,
+.update-user-button,
+.update-password-button,
+.delete-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Add transition for hover effects */
+  margin-right: 10px; /* Space between buttons */
+  font-weight: bold; /* Make button text bold */
+}
+
+.add-user-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.add-user-button:hover {
+  background-color: #45a049; /* Darker green */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.cancel-button {
+  background-color: #6c757d; /* Gray */
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268; /* Darker gray */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.update-user-button {
+  background-color: #007BFF; /* Blue */
+  color: white;
+}
+
+.update-user-button:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.update-password-button {
+  background-color: #FFC107; /* Yellow */
+  color: white;
+}
+
+.update-password-button:hover {
+  background-color: #e0a800; /* Darker yellow */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.delete-button {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker red */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff; /* White background for the table */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #000; /* Black text color for table cells */
+}
+
+.users-table th {
+  background-color: #4CAF50; /* Header background color */
+  color: #ffffff; /* Header text color */
+}
+
+.users-table tr:hover {
+  background-color: #f1f1f1; /* Light gray background on row hover */
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-user-form {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}

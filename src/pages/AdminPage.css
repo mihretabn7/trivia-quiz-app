@@ -1,0 +1,78 @@
+.admin-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* .navbar {
+  background-color: #4A90E2;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+/* .navbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f9fbff;
+} */
+
+.logout-button {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #FF4500;
+}
+
+.admin-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f2f5;
+  flex-grow: 1;
+}
+
+.admin-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.admin-card h2 {
+  margin: 0;
+  color: #4A90E2;
+  font-size: 1.5rem;
+}
+
+.admin-card p {
+  color: #e2ce18;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.chart-card {
+  height: 300px; /* Adjust height for chart visibility */
+}

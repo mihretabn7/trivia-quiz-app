@@ -1,0 +1,36 @@
+/* src/pages/Home.css */
+.home-container {
+    text-align: center; /* Center the text */
+    margin: 20px; /* Add some margin */
+    padding: 20px; /* Add padding */
+    background-color: #282c34; /* Dark background */
+    color: white; /* White text for contrast */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  p {
+    font-size: 1.2rem; /* Medium font size for description */
+    margin-bottom: 30px; /* Space below the paragraph */
+  }
+  
+  .start-quiz-button {
+    display: inline-block; /* Make it a block for padding */
+    padding: 10px 20px; /* Add padding for button */
+    background-color: #ff5733; /* Vibrant button color */
+    color: white; /* White text on button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Font size for button */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .start-quiz-button:hover {
+    background-color: #f1c40f; /* Change button color on hover */
+  }
+  

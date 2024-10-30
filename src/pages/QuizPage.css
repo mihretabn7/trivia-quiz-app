@@ -1,0 +1,132 @@
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    height: 100vh; /* Full height for a centered layout */
+    justify-content: center;
+    animation: fadeIn 0.5s ease-in; /* Fade-in effect for the quiz container */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .quiz-title {
+    font-size: 3rem; /* Increased title size for better visibility */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    animation: slideIn 0.5s ease-out; /* Slide-in effect for the title */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .question-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); /* Light translucent gradient */
+    border-radius: 20px; /* More rounded corners */
+    padding: 30px; /* Increased padding for spaciousness */
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    animation: bounceIn 0.5s ease-out; /* Bounce-in effect for question cards */
+  }
+  
+  @keyframes bounceIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .question-text {
+    font-size: 1.8rem; /* Slightly larger question text */
+    margin-bottom: 20px;
+    font-weight: bold; /* Bolder text for emphasis */
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for clarity */
+  }
+  
+  .option-button {
+    padding: 12px;
+    border: none;
+    border-radius: 12px; /* Rounded buttons */
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Bright blue gradient for options */
+    color: #ffffff;
+    font-size: 1.5rem; /* Increased button font size */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s; /* Added transform for hover effect */
+    animation: fadeIn 0.5s ease-in; /* Fade-in effect for option buttons */
+  }
+  
+  .option-button:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe); /* Lighter blue on hover */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+  }
+  
+  .option-button.selected {
+    background: linear-gradient(135deg, #ff6a88, #ff9a44); /* Gradient for the selected option */
+  }
+  
+  .timer {
+    margin-top: 20px;
+    font-size: 1.5rem; /* Increased timer font size */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); /* Light gradient for timer */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for timer */
+    animation: pulse 1s infinite alternate; /* Pulsing effect for the timer */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .loading,
+  .error,
+  .final-score {
+    font-size: 1.8rem; /* Increased font size for messages */
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for messages */
+  }
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space below the button */
+    color: #000; /* Default color */
+  }
+  
+  .back-button:hover {
+    color: #007bff; /* Change color on hover */
+  }
